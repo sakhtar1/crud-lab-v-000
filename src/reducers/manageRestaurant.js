@@ -15,13 +15,13 @@ export default function manageRestaurants(state = {
     case 'DELETE_RESTAURANT':
      return { ...state, restaurants: state.restaurants.filter(restaurant => restaurant.id !== action.id) }
      case 'ADD_REVIEW':
-     const addReview = {
+     const newReview = {
        id: cuid(),
        text: action.review.text,
        restaurantId: action.review.restaurantId
      }
 
-       return { ...state, reviews: [...state.reviews, addReview] }
+       return { ...state, reviews: [...state.reviews, newReview] }
      case 'DELETE_REVIEW':
       return { ...state, reviews: state.reviews.filter(review => review.id !== action.id) }
     default:
