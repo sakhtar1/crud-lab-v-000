@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ReviewsContainer from '../../containers/ReviewsContainer'
+import RestaurantsContainer from '../containers/RestaurantsContainer'
 
 
 class Restaurant extends Component {
